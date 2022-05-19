@@ -1,0 +1,20 @@
+body {
+  background-image: url("./resources/background.jpeg");
+}
+
+.hidden {
+  display: none;
+}
+
+.villian-card {
+  background-color: rgba(182, 179, 179, 0.422);
+  border: 3px solid rgb(153, 59, 59);
+  box-shadow: 0 0 10px rgba(208, 41, 41, 0.591);
+}
+
+.player-card {
+  background-color: rgba(182, 179, 179, 0.422);
+  border: 3px solid rgba(125, 206, 107, 0.697);
+  box-shadow: 0 0 10px rgba(46, 195, 9, 0.591);
+  text-align: center;
+}
