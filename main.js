@@ -36,7 +36,7 @@ function drawCharacters() {
   <h1 class="lvl-number text-warning p-2 m-auto">Lvl. ${currentVillian.level}</h1>
   <div class="progress w-50 m-auto">
     <div class="progress-bar  text-dark bg-danger" role="progressbar" style="width: ${currentVillian.health / totalHealth * 100}%;" aria-valuenow="${currentVillian.health / totalHealth}"
-      aria-valuemin="0" aria-valuemax="${currentVillian.health / totalHealth}">${Math.floor(currentVillian.health / totalHealth * 100)}%</div>
+      aria-valuemin="0" aria-valuemax="${currentVillian.health / totalHealth}">${Math.floor(currentVillian.health / totalHealth * 100)}% (${currentVillian.health}/${totalHealth})</div>
   </div>
   <img src="${currentVillian.imgUrl}" alt="">
 </div>
@@ -87,15 +87,14 @@ function bossAttacks() {
 function nextLevel() {
 
   hero.health = 100
-  currentVillian.health = 100
   console.log("does this work");
   document.getElementById("attack-button").classList.remove("disabled")
   document.getElementById("next-level-button").classList.add("hidden")
   currentVillian.level += 1
-  drawCharacters()
-  stopBossAttacks()
   SetBossAttributes()
+  stopBossAttacks()
   setAttackInterval()
+  drawCharacters()
 }
 
 function resetGame() {
