@@ -13,8 +13,8 @@
 </head>
 
 <body class="container-fluid">
-  <div class="row">
-    <div class="col-3">
+  <div class="row m-3">
+    <div class="col-md-3">
       <div class="player-card p-3" id="player-card">
         <!-- <div class="progress w-50">
           <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25"
@@ -25,8 +25,8 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-8 offset-2">
-      <div class="villian-card text-center m-auto w-50 p-5" id="villian-card">
+    <div class="col-md-8 offset-md-2">
+      <div class="villian-card text-center m-auto w-md-50 p-5" id="villian-card">
         <!-- <div class="progress w-50 m-auto">
           <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25"
             aria-valuemin="0" aria-valuemax="100">25%</div>
@@ -36,11 +36,11 @@
       </div>
       <div class="row d-flex justify-content-center">
         <div class="col-2 text-center">
-          <button id="attack-button" class="btn btn-danger rounded-pill m-4" onclick="attack()">ATTACK</button>
+          <button id="attack-button" class="btn btn-danger rounded-pill m-md-4 mt-3" onclick="attack()">ATTACK</button>
         </div>
         <div class="row">
           <div class="col-12 text-end  d-flex justify-content-end">
-            <button id="next-level-button" class="btn btn-success hidden rounded-pill m-4" onclick="nextLevel()">
+            <button id="next-level-button" class="btn btn-success hidden rounded-pill m-md-4" onclick="nextLevel()">
               Next Level
             </button>
             <button id="reset-game" class="btn btn-danger rounded-pill m-4" onclick="resetGame()"> Reset Game</button>

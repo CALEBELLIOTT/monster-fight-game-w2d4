@@ -102,6 +102,7 @@ function resetGame() {
   currentVillian.health = 100
   currentVillian.level = 1
   hero.health = 100
+  totalHealth = 100
   hero.coins = 0
   drawCharacters()
   document.getElementById("attack-button").classList.remove("disabled")
