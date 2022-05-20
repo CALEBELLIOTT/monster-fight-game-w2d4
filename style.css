@@ -18,3 +18,8 @@ body {
   box-shadow: 0 0 10px rgba(46, 195, 9, 0.591);
   text-align: center;
 }
+
+.hero-img {
+  height: 50%;
+  width: 50%;
+}

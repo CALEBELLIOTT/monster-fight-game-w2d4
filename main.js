@@ -51,7 +51,7 @@ function drawCharacters() {
 <div class="progress-bar text-dark bg-danger" role="progressbar" style="width: ${hero.health}%;" aria-valuenow="${hero.health}"
   aria-valuemin="0" aria-valuemax="${hero.health}">${hero.health}%</div>
 </div>
-<img src="./resources/hero.png" alt="">
+<img class="hero-img" src="./resources/hero.png" alt="">
 <h3 class="m-0">Coins : $${hero.coins}</h3>
 `
   document.getElementById("player-card").innerHTML = template
